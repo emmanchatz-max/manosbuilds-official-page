@@ -203,7 +203,7 @@ export default function Home() {
                       <div className="absolute inset-0 z-10 bg-[linear-gradient(135deg,rgba(22,22,21,0.18),transparent_45%),linear-gradient(180deg,transparent_55%,rgba(11,10,10,0.45)),radial-gradient(900px_420px_at_20%_0%,rgba(47,91,78,0.18),transparent_62%)]" />
                       <div className="relative aspect-[4/3]">
                         <StudioImage
-                          src="/images/workspace-photo.jpg"
+                          src="/images/workspace.png"
                           fallbackSrc="/images/workspace-placeholder.svg"
                           alt="Premium workspace for MANOSBUILDS"
                           className="absolute inset-0"
@@ -222,7 +222,7 @@ export default function Home() {
                   <div className="grid gap-4 md:col-span-5">
                     <div className="overflow-hidden rounded-3xl border border-line bg-white/40">
                       <StudioImage
-                        src="/images/founder-photo.jpg"
+                        src="/images/portrait.png"
                         fallbackSrc="/images/portrait.svg"
                         alt="Founder portrait"
                         className="aspect-[4/5]"
@@ -581,7 +581,7 @@ export default function Home() {
                   <div className="relative overflow-hidden rounded-[32px] border border-line bg-card/75 shadow-lift">
                     <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(0,0,0,0.06))]" />
                     <StudioImage
-                      src="/images/founder-photo.jpg"
+                      src="/images/portrait.png"
                       fallbackSrc="/images/portrait.svg"
                       alt="Portrait photo of Manolis"
                       className="relative aspect-[4/5] md:aspect-[4/5]"
@@ -595,7 +595,7 @@ export default function Home() {
                     <div className="absolute inset-0 bg-[linear-gradient(140deg,rgba(22,22,21,0.10),transparent_55%),radial-gradient(900px_320px_at_20%_0%,rgba(47,91,78,0.16),transparent_62%)]" />
                     <div className="relative aspect-[16/10]">
                       <StudioImage
-                        src="/images/workspace-photo.jpg"
+                        src="/images/workspace.png"
                         fallbackSrc="/images/workspace-placeholder.svg"
                         alt="Workspace photo"
                         className="absolute inset-0"
