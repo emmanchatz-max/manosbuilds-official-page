@@ -197,6 +197,11 @@ export default function Home() {
             <Reveal className="md:col-span-6">
               <div className="relative overflow-hidden rounded-[32px] border border-line bg-card/80 p-4 shadow-lift">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(47,91,78,0.12),transparent_55%)]" />
+                <div aria-hidden className="pointer-events-none absolute inset-0">
+                  <div className="hero-color-a absolute -left-24 -top-24 h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle_at_center,rgba(47,91,78,0.22),transparent_62%)] blur-3xl" />
+                  <div className="hero-color-b absolute -right-24 -top-28 h-[560px] w-[560px] rounded-full bg-[radial-gradient(circle_at_center,rgba(215,166,106,0.18),transparent_62%)] blur-3xl" />
+                  <div className="hero-color-c absolute left-1/3 top-1/2 h-[620px] w-[620px] -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.12),transparent_60%)] blur-3xl" />
+                </div>
                 <div className="relative grid gap-4 md:grid-cols-12">
                   <div className="md:col-span-7">
                     <div className="group relative overflow-hidden rounded-3xl border border-line bg-white/40">
@@ -206,8 +211,15 @@ export default function Home() {
                           src="/images/workspace.png"
                           fallbackSrc="/images/workspace-placeholder.svg"
                           alt="Premium workspace for MANOSBUILDS"
-                          className="absolute inset-0"
-                          imgClassName="transition duration-500 group-hover:scale-[1.02]"
+                          className="hero-swap-a absolute inset-0"
+                          imgClassName="transition duration-700 group-hover:scale-[1.02]"
+                        />
+                        <StudioImage
+                          src="/images/workspace.png"
+                          fallbackSrc="/images/workspace-placeholder.svg"
+                          alt=""
+                          className="hero-swap-b absolute inset-0"
+                          imgClassName="scale-[1.06] object-[50%_30%]"
                         />
                         <div className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-6 border-t border-line bg-card/80 px-4 py-3 backdrop-blur">
                           <div className="text-xs font-semibold uppercase tracking-[0.22em] text-ink">
@@ -220,13 +232,23 @@ export default function Home() {
                   </div>
 
                   <div className="grid gap-4 md:col-span-5">
-                    <div className="overflow-hidden rounded-3xl border border-line bg-white/40">
-                      <StudioImage
-                        src="/images/portrait.png"
-                        fallbackSrc="/images/portrait.svg"
-                        alt="Founder portrait"
-                        className="aspect-[4/5]"
-                      />
+                    <div className="relative overflow-hidden rounded-3xl border border-line bg-white/40">
+                      <div className="relative aspect-[4/5]">
+                        <StudioImage
+                          src="/images/portrait.png"
+                          fallbackSrc="/images/portrait.svg"
+                          alt="Founder portrait"
+                          className="hero-swap-a absolute inset-0"
+                          imgClassName="transition duration-700 group-hover:scale-[1.02]"
+                        />
+                        <StudioImage
+                          src="/images/workspace.png"
+                          fallbackSrc="/images/workspace-placeholder.svg"
+                          alt=""
+                          className="hero-swap-b absolute inset-0"
+                          imgClassName="scale-[1.04] object-[50%_35%]"
+                        />
+                      </div>
                     </div>
 
                     <div className="relative overflow-hidden rounded-3xl border border-line bg-white/40">

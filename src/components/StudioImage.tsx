@@ -21,7 +21,7 @@ export function StudioImage({
   const [currentSrc, setCurrentSrc] = useState(src);
 
   return (
-    <div className={cn("relative overflow-hidden", className)}>
+    <div className={cn("overflow-hidden", className)}>
       <img
         src={currentSrc}
         alt={alt}
