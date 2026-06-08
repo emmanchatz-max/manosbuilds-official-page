@@ -32,14 +32,19 @@ export default function RootLayout({
 }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="min-h-dvh bg-canvas font-sans antialiased text-ink">
+      <body className="relative min-h-dvh overflow-x-clip bg-canvas font-sans antialiased text-ink">
+        <div aria-hidden className="pointer-events-none fixed inset-0 z-0">
+          <div className="absolute -left-32 -top-36 h-[520px] w-[520px] rounded-full bg-accent/10 blur-3xl" />
+          <div className="absolute -right-36 -top-48 h-[620px] w-[620px] rounded-full bg-black/5 blur-3xl" />
+          <div className="absolute left-1/2 top-[62%] h-[760px] w-[760px] -translate-x-1/2 rounded-full bg-accent/8 blur-3xl" />
+        </div>
         <a
           href="#content"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-card focus:px-4 focus:py-3 focus:text-sm focus:shadow-lift focus:outline-none"
         >
           Skip to content
         </a>
-        {children}
+        <div className="relative z-10">{children}</div>
       </body>
     </html>
   );

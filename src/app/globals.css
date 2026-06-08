@@ -10,6 +10,33 @@ body {
   background-color: theme('colors.canvas');
   color: theme('colors.ink');
   text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: radial-gradient(
+      900px 520px at 14% -8%,
+      rgba(47, 91, 78, 0.12),
+      transparent 55%
+    ),
+    radial-gradient(720px 520px at 92% 6%, rgba(0, 0, 0, 0.06), transparent 58%),
+    radial-gradient(
+      900px 620px at 50% 112%,
+      rgba(47, 91, 78, 0.08),
+      transparent 60%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.014) 0px,
+      rgba(0, 0, 0, 0.014) 1px,
+      transparent 1px,
+      transparent 14px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.011) 0px,
+      rgba(0, 0, 0, 0.011) 1px,
+      transparent 1px,
+      transparent 14px
+    );
 }
 
 ::selection {

@@ -24,7 +24,7 @@ export function Navbar() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-line bg-canvas/70 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-line/80 bg-canvas/65 backdrop-blur-xl shadow-[0_1px_0_rgba(0,0,0,0.04)]">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
         <Logo />
 
@@ -45,7 +45,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line bg-card text-ink md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line bg-card text-ink shadow-[0_1px_0_rgba(0,0,0,0.05)] transition hover:-translate-y-0.5 hover:shadow-lift active:translate-y-0 md:hidden"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((v: boolean) => !v)}
