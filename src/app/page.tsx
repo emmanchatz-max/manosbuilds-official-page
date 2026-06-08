@@ -139,6 +139,32 @@ export default function Home() {
                 Premium Websites for Modern Businesses
               </h1>
 
+              <div className="mt-7 md:hidden">
+                <div className="relative overflow-hidden rounded-[32px] border border-line bg-card/80 p-3 shadow-lift">
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(11,10,10,0.22)),radial-gradient(900px_420px_at_20%_0%,rgba(47,91,78,0.16),transparent_62%)]" />
+                  <div aria-hidden className="pointer-events-none absolute inset-0">
+                    <div className="hero-color-a absolute -left-24 -top-24 h-[420px] w-[420px] rounded-full bg-[radial-gradient(circle_at_center,rgba(47,91,78,0.22),transparent_62%)] blur-3xl" />
+                    <div className="hero-color-b absolute -right-24 -top-20 h-[420px] w-[420px] rounded-full bg-[radial-gradient(circle_at_center,rgba(215,166,106,0.16),transparent_62%)] blur-3xl" />
+                  </div>
+                  <div className="relative">
+                    <StudioImage
+                      src="/images/portrait.png"
+                      fallbackSrc="/images/portrait.svg"
+                      alt="Founder portrait of Manolis"
+                      className="aspect-[4/5] rounded-[26px]"
+                    />
+                    <div className="absolute inset-x-4 bottom-4 rounded-2xl border border-white/20 bg-black/35 px-4 py-3 text-white backdrop-blur">
+                      <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-white/70">
+                        Founder-led studio
+                      </div>
+                      <div className="mt-1 text-sm font-medium">
+                        Personal premium digital studio by Manolis
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <p className="mt-6 max-w-xl text-base leading-relaxed text-muted md:text-lg">
                 Beautiful, high-performing websites designed to help businesses stand
                 out and grow online.
@@ -194,19 +220,53 @@ export default function Home() {
               </div>
             </Reveal>
 
-            <Reveal className="md:col-span-6">
-              <div className="relative overflow-hidden rounded-[32px] border border-line bg-card/80 p-4 shadow-lift">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(47,91,78,0.12),transparent_55%)]" />
+            <Reveal className="hidden md:block md:col-span-6">
+              <div className="relative overflow-hidden rounded-[36px] border border-line bg-card/85 p-4 shadow-lift">
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_40%,rgba(11,10,10,0.18)),radial-gradient(circle_at_top,rgba(47,91,78,0.12),transparent_55%)]" />
                 <div aria-hidden className="pointer-events-none absolute inset-0">
                   <div className="hero-color-a absolute -left-24 -top-24 h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle_at_center,rgba(47,91,78,0.22),transparent_62%)] blur-3xl" />
                   <div className="hero-color-b absolute -right-24 -top-28 h-[560px] w-[560px] rounded-full bg-[radial-gradient(circle_at_center,rgba(215,166,106,0.18),transparent_62%)] blur-3xl" />
                   <div className="hero-color-c absolute left-1/3 top-1/2 h-[620px] w-[620px] -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.12),transparent_60%)] blur-3xl" />
                 </div>
-                <div className="relative grid gap-4 md:grid-cols-12">
-                  <div className="md:col-span-7">
+                <div className="relative">
+                  <StudioImage
+                    src="/images/portrait.png"
+                    fallbackSrc="/images/portrait.svg"
+                    alt="Founder portrait of Manolis"
+                    className="aspect-[4/5] rounded-[28px]"
+                  />
+                  <div className="absolute inset-x-5 bottom-5 rounded-[24px] border border-white/15 bg-black/30 p-5 text-white backdrop-blur-md">
+                    <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-white/70">
+                      Founder-led studio
+                    </div>
+                    <div className="mt-2 text-2xl font-semibold tracking-tight">
+                      Personal premium digital studio by Manolis
+                    </div>
+                    <div className="mt-2 max-w-sm text-sm leading-relaxed text-white/75">
+                      Design taste, business clarity, and modern technology in one
+                      founder-led process.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        <section className="border-t border-line">
+          <div className="mx-auto max-w-6xl px-5 py-10 md:py-14">
+            <Reveal>
+              <div className="relative overflow-hidden rounded-[36px] border border-line bg-card/80 p-4 shadow-lift">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(47,91,78,0.12),transparent_55%)]" />
+                <div aria-hidden className="pointer-events-none absolute inset-0">
+                  <div className="hero-color-a absolute -left-24 -top-24 h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle_at_center,rgba(47,91,78,0.18),transparent_62%)] blur-3xl" />
+                  <div className="hero-color-b absolute -right-24 -top-28 h-[560px] w-[560px] rounded-full bg-[radial-gradient(circle_at_center,rgba(215,166,106,0.14),transparent_62%)] blur-3xl" />
+                </div>
+                <div className="relative grid gap-5 md:grid-cols-12 md:items-center">
+                  <div className="md:col-span-8">
                     <div className="group relative overflow-hidden rounded-3xl border border-line bg-white/40">
                       <div className="absolute inset-0 z-10 bg-[linear-gradient(135deg,rgba(22,22,21,0.18),transparent_45%),linear-gradient(180deg,transparent_55%,rgba(11,10,10,0.45)),radial-gradient(900px_420px_at_20%_0%,rgba(47,91,78,0.18),transparent_62%)]" />
-                      <div className="relative aspect-[4/3]">
+                      <div className="relative aspect-[16/10]">
                         <StudioImage
                           src="/images/workspace.png"
                           fallbackSrc="/images/workspace-placeholder.svg"
@@ -223,35 +283,34 @@ export default function Home() {
                         />
                         <div className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-6 border-t border-line bg-card/80 px-4 py-3 backdrop-blur">
                           <div className="text-xs font-semibold uppercase tracking-[0.22em] text-ink">
-                            Editorial layout
+                            Supporting studio visual
                           </div>
-                          <div className="text-xs text-muted">Warm · Minimal · Premium</div>
+                          <div className="text-xs text-muted">Workspace · Process · Quality</div>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="grid gap-4 md:col-span-5">
-                    <div className="relative overflow-hidden rounded-3xl border border-line bg-white/40">
-                      <div className="relative aspect-[4/5]">
-                        <StudioImage
-                          src="/images/portrait.png"
-                          fallbackSrc="/images/portrait.svg"
-                          alt="Founder portrait"
-                          className="hero-swap-a absolute inset-0"
-                          imgClassName="transition duration-700 group-hover:scale-[1.02]"
-                        />
-                        <StudioImage
-                          src="/images/workspace.png"
-                          fallbackSrc="/images/workspace-placeholder.svg"
-                          alt=""
-                          className="hero-swap-b absolute inset-0"
-                          imgClassName="scale-[1.04] object-[50%_35%]"
-                        />
+                  <div className="grid gap-3 md:col-span-4">
+                    <div className="rounded-2xl border border-line bg-white/45 px-4 py-4 transition hover:-translate-y-0.5 hover:shadow-lift">
+                      <div className="flex items-center gap-2 text-xs font-semibold text-ink">
+                        <Wand2 className="h-4 w-4 text-accent" aria-hidden />
+                        Premium aesthetics
+                      </div>
+                      <div className="mt-2 text-sm leading-relaxed text-muted">
+                        Luxury simplicity with editorial balance.
                       </div>
                     </div>
-
-                    <div className="relative overflow-hidden rounded-3xl border border-line bg-white/40">
+                    <div className="rounded-2xl border border-line bg-white/45 px-4 py-4 transition hover:-translate-y-0.5 hover:shadow-lift">
+                      <div className="flex items-center gap-2 text-xs font-semibold text-ink">
+                        <Bolt className="h-4 w-4 text-accent" aria-hidden />
+                        High performance
+                      </div>
+                      <div className="mt-2 text-sm leading-relaxed text-muted">
+                        Fast pages, clean UX, SEO-ready structure.
+                      </div>
+                    </div>
+                    <div className="relative overflow-hidden rounded-2xl border border-line bg-white/40">
                       <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(0,0,0,0.05))]" />
                       <div className="relative aspect-[9/16]">
                         <div className="absolute inset-0 grid place-items-center">
@@ -268,27 +327,6 @@ export default function Home() {
                       <div className="absolute inset-x-0 bottom-0 border-t border-line bg-card/80 px-4 py-3 text-xs text-muted backdrop-blur">
                         Designed for conversion & clarity
                       </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="relative mt-4 grid grid-cols-2 gap-3">
-                  <div className="rounded-2xl border border-line bg-white/45 px-4 py-4 transition hover:-translate-y-0.5 hover:shadow-lift">
-                    <div className="flex items-center gap-2 text-xs font-semibold text-ink">
-                      <Wand2 className="h-4 w-4 text-accent" aria-hidden />
-                      Premium aesthetics
-                    </div>
-                    <div className="mt-2 text-sm leading-relaxed text-muted">
-                      Luxury simplicity with editorial balance.
-                    </div>
-                  </div>
-                  <div className="rounded-2xl border border-line bg-white/45 px-4 py-4 transition hover:-translate-y-0.5 hover:shadow-lift">
-                    <div className="flex items-center gap-2 text-xs font-semibold text-ink">
-                      <Bolt className="h-4 w-4 text-accent" aria-hidden />
-                      High performance
-                    </div>
-                    <div className="mt-2 text-sm leading-relaxed text-muted">
-                      Fast pages, clean UX, SEO-ready structure.
                     </div>
                   </div>
                 </div>
@@ -600,16 +638,23 @@ export default function Home() {
 
               <Reveal className="md:col-span-5">
                 <div className="grid gap-4">
-                  <div className="relative overflow-hidden rounded-[32px] border border-line bg-card/75 shadow-lift">
-                    <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(0,0,0,0.06))]" />
-                    <StudioImage
-                      src="/images/portrait.png"
-                      fallbackSrc="/images/portrait.svg"
-                      alt="Portrait photo of Manolis"
-                      className="relative aspect-[4/5] md:aspect-[4/5]"
-                    />
-                    <div className="absolute inset-x-0 bottom-0 border-t border-line bg-card/80 px-4 py-3 text-xs text-muted backdrop-blur">
-                      Founder portrait — replace with professional photography
+                  <div className="rounded-[32px] border border-line bg-card/75 p-6 shadow-[0_1px_0_rgba(0,0,0,0.04)]">
+                    <div className="text-xs font-semibold uppercase tracking-[0.22em] text-muted">
+                      Studio principles
+                    </div>
+                    <div className="mt-4 grid gap-3">
+                      {[
+                        "Thoughtful design decisions",
+                        "Founder-led communication",
+                        "Modern tools with human taste"
+                      ].map((item) => (
+                        <div
+                          key={item}
+                          className="rounded-2xl border border-line bg-white/45 px-4 py-4 text-sm leading-relaxed text-muted"
+                        >
+                          {item}
+                        </div>
+                      ))}
                     </div>
                   </div>
 
@@ -622,6 +667,9 @@ export default function Home() {
                         alt="Workspace photo"
                         className="absolute inset-0"
                       />
+                    </div>
+                    <div className="absolute inset-x-0 bottom-0 border-t border-line bg-card/80 px-4 py-3 text-xs text-muted backdrop-blur">
+                      Studio environment — supporting visual
                     </div>
                   </div>
                 </div>
