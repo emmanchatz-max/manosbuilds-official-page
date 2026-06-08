@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: theme('colors.canvas');
+  color: theme('colors.ink');
+  text-rendering: geometricPrecision;
+}
+
+::selection {
+  background: rgba(47, 91, 78, 0.18);
+}
+
+:focus-visible {
+  outline: 2px solid rgba(47, 91, 78, 0.45);
+  outline-offset: 3px;
+}
