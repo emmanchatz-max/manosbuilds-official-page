@@ -34,9 +34,9 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <body className="relative min-h-dvh overflow-x-clip bg-canvas font-sans antialiased text-ink">
         <div aria-hidden className="pointer-events-none fixed inset-0 z-0">
-          <div className="absolute -left-32 -top-36 h-[520px] w-[520px] rounded-full bg-accent/10 blur-3xl" />
-          <div className="absolute -right-36 -top-48 h-[620px] w-[620px] rounded-full bg-black/5 blur-3xl" />
-          <div className="absolute left-1/2 top-[62%] h-[760px] w-[760px] -translate-x-1/2 rounded-full bg-accent/8 blur-3xl" />
+          <div className="absolute -left-32 -top-40 h-[560px] w-[560px] rounded-full bg-accent/14 blur-3xl" />
+          <div className="absolute -right-44 -top-56 h-[700px] w-[700px] rounded-full bg-black/6 blur-3xl" />
+          <div className="absolute left-1/2 top-[62%] h-[820px] w-[820px] -translate-x-1/2 rounded-full bg-accent/10 blur-3xl" />
         </div>
         <a
           href="#content"
