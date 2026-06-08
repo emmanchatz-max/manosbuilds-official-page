@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   ArrowUpRight,
   Bolt,
@@ -18,6 +17,7 @@ import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
+import { StudioImage } from "@/components/StudioImage";
 
 const featuredWork = [
   {
@@ -200,18 +200,15 @@ export default function Home() {
                 <div className="relative grid gap-4 md:grid-cols-12">
                   <div className="md:col-span-7">
                     <div className="group relative overflow-hidden rounded-3xl border border-line bg-white/40">
-                      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(22,22,21,0.10),transparent_55%),radial-gradient(900px_420px_at_20%_0%,rgba(47,91,78,0.16),transparent_62%)]" />
+                      <div className="absolute inset-0 z-10 bg-[linear-gradient(135deg,rgba(22,22,21,0.18),transparent_45%),linear-gradient(180deg,transparent_55%,rgba(11,10,10,0.45)),radial-gradient(900px_420px_at_20%_0%,rgba(47,91,78,0.18),transparent_62%)]" />
                       <div className="relative aspect-[4/3]">
-                        <div className="absolute inset-0 grid place-items-center">
-                          <div className="text-center">
-                            <div className="text-xs font-semibold uppercase tracking-[0.22em] text-muted">
-                              Workspace Photography
-                            </div>
-                            <div className="mt-2 text-sm text-muted">
-                              Add a real image later
-                            </div>
-                          </div>
-                        </div>
+                        <StudioImage
+                          src="/images/workspace-photo.jpg"
+                          fallbackSrc="/images/workspace-placeholder.svg"
+                          alt="Premium workspace for MANOSBUILDS"
+                          className="absolute inset-0"
+                          imgClassName="transition duration-500 group-hover:scale-[1.02]"
+                        />
                         <div className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-6 border-t border-line bg-card/80 px-4 py-3 backdrop-blur">
                           <div className="text-xs font-semibold uppercase tracking-[0.22em] text-ink">
                             Editorial layout
@@ -224,14 +221,11 @@ export default function Home() {
 
                   <div className="grid gap-4 md:col-span-5">
                     <div className="overflow-hidden rounded-3xl border border-line bg-white/40">
-                      <Image
-                        src="/images/portrait.svg"
+                      <StudioImage
+                        src="/images/founder-photo.jpg"
+                        fallbackSrc="/images/portrait.svg"
                         alt="Founder portrait"
-                        width={900}
-                        height={1100}
-                        priority
-                        unoptimized
-                        className="h-auto w-full object-cover"
+                        className="aspect-[4/5]"
                       />
                     </div>
 
@@ -586,13 +580,11 @@ export default function Home() {
                 <div className="grid gap-4">
                   <div className="relative overflow-hidden rounded-[32px] border border-line bg-card/75 shadow-lift">
                     <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(0,0,0,0.06))]" />
-                    <Image
-                      src="/images/portrait.svg"
+                    <StudioImage
+                      src="/images/founder-photo.jpg"
+                      fallbackSrc="/images/portrait.svg"
                       alt="Portrait photo of Manolis"
-                      width={900}
-                      height={1100}
-                      unoptimized
-                      className="relative h-auto w-full object-cover"
+                      className="relative aspect-[4/5] md:aspect-[4/5]"
                     />
                     <div className="absolute inset-x-0 bottom-0 border-t border-line bg-card/80 px-4 py-3 text-xs text-muted backdrop-blur">
                       Founder portrait — replace with professional photography
@@ -601,15 +593,13 @@ export default function Home() {
 
                   <div className="relative overflow-hidden rounded-[32px] border border-line bg-card/75 shadow-[0_1px_0_rgba(0,0,0,0.04)]">
                     <div className="absolute inset-0 bg-[linear-gradient(140deg,rgba(22,22,21,0.10),transparent_55%),radial-gradient(900px_320px_at_20%_0%,rgba(47,91,78,0.16),transparent_62%)]" />
-                    <div className="relative aspect-[16/10] grid place-items-center">
-                      <div className="text-center">
-                        <div className="text-xs font-semibold uppercase tracking-[0.22em] text-muted">
-                          Workspace photo
-                        </div>
-                        <div className="mt-2 text-sm text-muted">
-                          Add a warm, premium studio shot
-                        </div>
-                      </div>
+                    <div className="relative aspect-[16/10]">
+                      <StudioImage
+                        src="/images/workspace-photo.jpg"
+                        fallbackSrc="/images/workspace-placeholder.svg"
+                        alt="Workspace photo"
+                        className="absolute inset-0"
+                      />
                     </div>
                   </div>
                 </div>
